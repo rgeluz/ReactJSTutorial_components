@@ -7,16 +7,36 @@ const App = () => {
   return (
     <div className="ui container comments">
       {/* comment # 1 */}
-      <CommentDetail author="Sam"/>
+      <CommentDetail 
+        image={faker.image.avatar()} 
+        author="Sam" 
+        timeAgo="Today at 4:54PM" 
+        comment="hi there" 
+      />
 
       {/* comment # 2 */}
-      <CommentDetail author="Alex"/>
+      <CommentDetail 
+        image={faker.image.avatar()}  
+        author="Alex" 
+        timeAgo="Today at 2:00AM" 
+        comment="hey whats up"
+      />
 
       {/* comment # 3 */}
-      <CommentDetail author="Jane"/>
+      <CommentDetail 
+        image={faker.image.avatar()}  
+        author="Jane" 
+        timeAgo="Yesterday at 5:00PM" 
+        comment="hi everyone"
+      />
 
       {/* comment # 4 */}
-      <CommentDetail author="John"/>
+      <CommentDetail 
+        image={faker.image.avatar()}  
+        author="John" 
+        timeAgo="Yesterday at 4:45PM" 
+        comment="hey whats up everyone"
+      />
       
     </div>
   );
