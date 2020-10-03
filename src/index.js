@@ -7,16 +7,16 @@ const App = () => {
   return (
     <div className="ui container comments">
       {/* comment # 1 */}
-      <CommentDetail />
+      <CommentDetail author="Sam"/>
 
       {/* comment # 2 */}
-      <CommentDetail />
+      <CommentDetail author="Alex"/>
 
       {/* comment # 3 */}
-      <CommentDetail />
+      <CommentDetail author="Jane"/>
 
       {/* comment # 4 */}
-      <CommentDetail />
+      <CommentDetail author="John"/>
       
     </div>
   );
