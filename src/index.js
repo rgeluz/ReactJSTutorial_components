@@ -7,17 +7,18 @@ import ApprovalCard from './ApprovalCard'
 const App = () => {
   return (
     <div className="ui container comments">
-      
-      <ApprovalCard/>
 
-      {/* comment # 1 */}
-      <CommentDetail 
-        image={faker.image.avatar()} 
-        author="Sam" 
-        timeAgo="Today at 4:54PM" 
-        comment="hi there" 
-      />
+      <ApprovalCard>  
+        {/* comment # 1 */}
+        <CommentDetail 
+          image={faker.image.avatar()} 
+          author="Sam" 
+          timeAgo="Today at 4:54PM" 
+          comment="hi there" 
+        />
+      </ApprovalCard>
 
+      <ApprovalCard> 
       {/* comment # 2 */}
       <CommentDetail 
         image={faker.image.avatar()}  
@@ -25,7 +26,9 @@ const App = () => {
         timeAgo="Today at 2:00AM" 
         comment="hey whats up"
       />
+      </ApprovalCard>
 
+      <ApprovalCard> 
       {/* comment # 3 */}
       <CommentDetail 
         image={faker.image.avatar()}  
@@ -33,7 +36,9 @@ const App = () => {
         timeAgo="Yesterday at 5:00PM" 
         comment="hi everyone"
       />
+      </ApprovalCard>
 
+      <ApprovalCard> 
       {/* comment # 4 */}
       <CommentDetail 
         image={faker.image.avatar()}  
@@ -41,7 +46,7 @@ const App = () => {
         timeAgo="Yesterday at 4:45PM" 
         comment="hey whats up everyone"
       />
-      
+      </ApprovalCard>
     </div>
   );
 }
